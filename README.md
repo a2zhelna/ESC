@@ -61,7 +61,7 @@ BEMF is the voltage across the “floating coil”. In most drone BLDCs and in t
 
 A comparator then compares the lead voltage with the virtual neutral voltage, and changes the state of its output when zero-crossing occurs. This output can be connected to an interrupt line of an MCU, notifying it when commutation should be done.
 
-**Circuit Design*
+**Circuit Design**
 The circuit design and component choice was influenced by [Phil’s Lab’s youtube video on ESCs](https://www.youtube.com/watch?v=dJjxcjJOlN0&t=302s), and [guser16’s ESC design](https://github.com/guser210/ESC).
 
 ### 2. ESC Testing
