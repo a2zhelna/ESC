@@ -40,13 +40,13 @@ When I first learned about this, I assumed commutation for efficient rotor rotat
 ![StatteGraphPNG](Images/LeadStateGraph.png)
 ([Source](https://www.digikey.com/en/articles/how-to-power-and-control-brushless-dc-motors); The “state graph” above shows the states of thee UVW leads — driven by the H-bridges).
 
-This method of driving the motor would be considered “open-loop drive”, which relies on no feedback from the actual rotation of the motor: producing an inefficient and non-continuous result (though, BLDCs are commonly started in open-loop).
+Driving the motor with constant commutation rates and without any reliance on feedback from the actual rotation of the motor would be considered “open-loop drive”: which produces an inefficient and non-continuous result (BLDCs are commonly only started in open-loop).
 
 One common method of figuring out the right time to commutate is by measuring the back-EMF of the “floating coil”.
 
 **BEMF Zero-crossing**
 
-Though there are other methods (like using integrated hall-effect sensors to let you know what particular rotor magnetic pole is at a particular location, other method from GreatScottt), this is the most common sensorless method I could find.
+Though there are other methods (field oriented control - complicated; using integrated hall-effect sensors to let you know what particular rotor magnetic pole is at a particular location), this is the most common sensorless method I could find.
 
 As the rotor rotates, the magnetic fields produced by the rotor’s magnets move through the coils. When a coil is floating, a significant EMF is induced across it (BEMF). This EMF can be measured to give insight on which stage of rotation the rotor is in.
 ![BEMFGraphPNG](Images/BEMFGraph.png)
