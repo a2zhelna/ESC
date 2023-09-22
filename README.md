@@ -4,7 +4,7 @@ The plan is to later design a flight controller board which controls this ESC an
 
 PCB Top             |  PCB Bottom
 :-------------------------:|:-------------------------:
-![PCBFront](Images/PCBFront.png)  |  ![PCBBack](Images/PCBBack.png)
+![PCBFront](Images/ESCv1_topzoom.png)  |  ![PCBBack](Images/ESCv1_botzoom.png)
 
 ### Chapters
 1. ESC Design
